@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "Practise">
+<test name= "Testing Practise">
+<classes>
+
+<!--  
+  <class name = "com.Practise.testCases.TC_OpenGoogle"></class>  -->
+
+  <!--  <class name = "com.Practise.testCases.TC_Login_001"></class>   -->
+  
+  <class name = "com.Practise.testCases.TC_NewCustomer_002"></class>
+  
+
+</classes>
+
+
+</test>
+
+
+
+
+
+
+</suite>

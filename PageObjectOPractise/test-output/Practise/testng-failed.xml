@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Practise]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testing Practise(failed)">
+    <classes>
+      <class name="com.Practise.testCases.TC_NewCustomer_002">
+        <methods>
+          <include name="tearDow"/>
+          <include name="NewCutomer_Test"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.Practise.testCases.TC_NewCustomer_002 -->
+    </classes>
+  </test> <!-- Testing Practise(failed) -->
+</suite> <!-- Failed suite [Practise] -->
