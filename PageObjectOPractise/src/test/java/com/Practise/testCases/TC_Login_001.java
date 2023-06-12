@@ -1,5 +1,7 @@
 package com.Practise.testCases;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
 import com.Practise.pageObjects.LoginDemoGuru;
@@ -11,7 +13,7 @@ public class TC_Login_001 extends BaseClass {
 	
 	
 	@Test
-	public void LoginPage()
+	public void LoginPage() throws IOException
 	{
 		
 		//driver.get(DemoGuru_URL);
@@ -34,6 +36,10 @@ public class TC_Login_001 extends BaseClass {
 		logger.info("Login button is clicked");
 		
 		System.out.println(" After Login  DemoGuru Title is  : "+driver.getTitle());
+		
+		captureScreenshot(driver, "Login-TC");
+		
+		logger.info(" Screenshot Taken ");
 		
 	}
 

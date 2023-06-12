@@ -1,25 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-07T12:42:47 GMT-07:00" name="Practise" finished-at="2023-06-07T12:43:51 GMT-07:00" duration-ms="64032">
+  <suite started-at="2023-06-12T13:50:58 GMT-07:00" name="Practise" finished-at="2023-06-12T13:54:14 GMT-07:00" duration-ms="195957">
     <groups>
     </groups>
-    <test started-at="2023-06-07T12:42:47 GMT-07:00" name="Testing Practise" finished-at="2023-06-07T12:43:51 GMT-07:00" duration-ms="64032">
+    <test started-at="2023-06-12T13:50:58 GMT-07:00" name="Testing Practise" finished-at="2023-06-12T13:54:14 GMT-07:00" duration-ms="195957">
       <class name="com.Practise.testCases.TC_NewCustomer_002">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Practise.testCases.TC_NewCustomer_002@21282ed8]" started-at="2023-06-07T12:42:47 GMT-07:00" name="setup" finished-at="2023-06-07T12:42:59 GMT-07:00" duration-ms="12416" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Practise.testCases.TC_NewCustomer_002@61001b64]" started-at="2023-06-12T13:53:04 GMT-07:00" name="setup" finished-at="2023-06-12T13:53:35 GMT-07:00" duration-ms="31125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="NewCutomer_Test()[pri:0, instance:com.Practise.testCases.TC_NewCustomer_002@21282ed8]" started-at="2023-06-07T12:42:59 GMT-07:00" name="NewCutomer_Test" finished-at="2023-06-07T12:43:51 GMT-07:00" duration-ms="51357" status="PASS">
+        <test-method signature="NewCutomer_Test()[pri:0, instance:com.Practise.testCases.TC_NewCustomer_002@61001b64]" started-at="2023-06-12T13:53:35 GMT-07:00" name="NewCutomer_Test" finished-at="2023-06-12T13:54:14 GMT-07:00" duration-ms="38980" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Please fill all fields}
+  (Session info: chrome=114.0.5735.106): Please fill all fields
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '01HW2308171.local', ip: 'fe80:0:0:0:a6:89ff:d202:9f92%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/f4/_mw82xh55kx...}, goog:chromeOptions: {debuggerAddress: localhost:56765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b7c6e8d41089d891fb61c4b766aba527]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill all fields}
+  (Session info: chrome=114.0.5735.106): Please fill all fields
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '01HW2308171.local', ip: 'fe80:0:0:0:a6:89ff:d202:9f92%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/f4/_mw82xh55kx...}, goog:chromeOptions: {debuggerAddress: localhost:56765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b7c6e8d41089d891fb61c4b766aba527
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at com.Practise.testCases.BaseClass.captureScreenshot(BaseClass.java:105)
+at com.Practise.testCases.TC_NewCustomer_002.NewCutomer_Test(TC_NewCustomer_002.java:83)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NewCutomer_Test -->
-        <test-method is-config="true" signature="tearDow()[pri:0, instance:com.Practise.testCases.TC_NewCustomer_002@21282ed8]" started-at="2023-06-07T12:43:51 GMT-07:00" name="tearDow" finished-at="2023-06-07T12:43:51 GMT-07:00" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="tearDow()[pri:0, instance:com.Practise.testCases.TC_NewCustomer_002@61001b64]" started-at="2023-06-12T13:54:14 GMT-07:00" name="tearDow" finished-at="2023-06-12T13:54:14 GMT-07:00" duration-ms="149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDow -->
       </class> <!-- com.Practise.testCases.TC_NewCustomer_002 -->
+      <class name="com.Practise.testCases.TC_OpenGoogle_Sample">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Practise.testCases.TC_OpenGoogle_Sample@12aba8be]" started-at="2023-06-12T13:50:58 GMT-07:00" name="setup" finished-at="2023-06-12T13:51:40 GMT-07:00" duration-ms="42140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LaunchChrome()[pri:0, instance:com.Practise.testCases.TC_OpenGoogle_Sample@12aba8be]" started-at="2023-06-12T13:51:40 GMT-07:00" name="LaunchChrome" finished-at="2023-06-12T13:51:47 GMT-07:00" duration-ms="6770" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_RESET
+  (Session info: chrome=114.0.5735.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '01HW2308171.local', ip: 'fe80:0:0:0:a6:89ff:d202:9f92%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/f4/_mw82xh55kx...}, goog:chromeOptions: {debuggerAddress: localhost:56111}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84c79b07fe2afdb25cfedacf2b39bb21]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_RESET
+  (Session info: chrome=114.0.5735.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '01HW2308171.local', ip: 'fe80:0:0:0:a6:89ff:d202:9f92%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/f4/_mw82xh55kx...}, goog:chromeOptions: {debuggerAddress: localhost:56111}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84c79b07fe2afdb25cfedacf2b39bb21
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.Practise.testCases.TC_OpenGoogle_Sample.LaunchChrome(TC_OpenGoogle_Sample.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchChrome -->
+        <test-method is-config="true" signature="tearDow()[pri:0, instance:com.Practise.testCases.TC_OpenGoogle_Sample@12aba8be]" started-at="2023-06-12T13:51:47 GMT-07:00" name="tearDow" finished-at="2023-06-12T13:51:47 GMT-07:00" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDow -->
+      </class> <!-- com.Practise.testCases.TC_OpenGoogle_Sample -->
+      <class name="com.Practise.testCases.TC_Login_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Practise.testCases.TC_Login_001@201a4587]" started-at="2023-06-12T13:51:47 GMT-07:00" name="setup" finished-at="2023-06-12T13:52:15 GMT-07:00" duration-ms="28224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginPage()[pri:0, instance:com.Practise.testCases.TC_Login_001@201a4587]" started-at="2023-06-12T13:52:15 GMT-07:00" name="LoginPage" finished-at="2023-06-12T13:53:03 GMT-07:00" duration-ms="48203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method is-config="true" signature="tearDow()[pri:0, instance:com.Practise.testCases.TC_Login_001@201a4587]" started-at="2023-06-12T13:53:03 GMT-07:00" name="tearDow" finished-at="2023-06-12T13:53:04 GMT-07:00" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDow -->
+      </class> <!-- com.Practise.testCases.TC_Login_001 -->
     </test> <!-- Testing Practise -->
   </suite> <!-- Practise -->
 </testng-results>

@@ -1,10 +1,16 @@
 package com.Practise.testCases;
 
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -82,9 +88,7 @@ public class BaseClass {
 		
 		logger = Logger.getLogger("Practise") ;
 		
-		PropertyConfigurator.configure("Log4j.properties");		
-				
-				
+		PropertyConfigurator.configure("Log4j.properties");				
 				
 	}
 	
@@ -93,5 +97,27 @@ public class BaseClass {
 	{
 		driver.quit();
 	}
+	
+	public void captureScreenshot(WebDriver  driver, String testcaseName) throws IOException
+	{
+		
+		TakesScreenshot ss = (TakesScreenshot)driver;
+		File src = ss.getScreenshotAs(OutputType.FILE);
+		File dest =  new File(System.getProperty("user.dir")+"/Screenshots/"+testcaseName+".png");
+		FileUtils.copyFile(src, dest);
+		System.out.println("The screenshot takes");
+		
+		
+	}
+	
+	public void clickAlert(WebDriver driver)
+	{
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
+	}
+	
+	
+	
+	
 
 }

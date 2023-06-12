@@ -3,6 +3,13 @@
 <suite name="Failed suite [Practise]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Testing Practise(failed)">
     <classes>
+      <class name="com.Practise.testCases.TC_OpenGoogle_Sample">
+        <methods>
+          <include name="tearDow"/>
+          <include name="setup"/>
+          <include name="LaunchChrome"/>
+        </methods>
+      </class> <!-- com.Practise.testCases.TC_OpenGoogle_Sample -->
       <class name="com.Practise.testCases.TC_NewCustomer_002">
         <methods>
           <include name="tearDow"/>

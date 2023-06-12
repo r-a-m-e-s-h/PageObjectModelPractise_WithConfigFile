@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Practise" class="navigator-link">
-              <span class="suite-name border-passed">Practise</span>
+              <span class="suite-name border-failed">Practise</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Practise" class="hide-methods failed suite-Practise"> (hide)</a> <!-- hide-methods failed suite-Practise -->
+                      <a href="#" panel-name="suite-Practise" class="show-methods failed suite-Practise"> (show)</a> <!-- show-methods failed suite-Practise -->
+                    </span>
+                    <div class="method-list-content failed suite-Practise">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Practise" title="com.Practise.testCases.TC_OpenGoogle_Sample" class="method navigator-link" hash-for-method="LaunchChrome">LaunchChrome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Practise" title="com.Practise.testCases.TC_NewCustomer_002" class="method navigator-link" hash-for-method="NewCutomer_Test">NewCutomer_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Practise -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +122,7 @@
                     <div class="method-list-content passed suite-Practise">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practise" title="com.Practise.testCases.TC_NewCustomer_002" class="method navigator-link" hash-for-method="NewCutomer_Test">NewCutomer_Test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Practise" title="com.Practise.testCases.TC_Login_001" class="method navigator-link" hash-for-method="LoginPage">LoginPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Practise -->
@@ -118,9 +137,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Practise" class="panel Practise">
-          <div class="suite-Practise-class-passed">
+          <div class="suite-Practise-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.Practise.testCases.TC_OpenGoogle_Sample</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LaunchChrome">
+                  </a> <!-- LaunchChrome -->
+                  <span class="method-name">LaunchChrome</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_RESET
+  (Session info: chrome=114.0.5735.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;01HW2308171.local&apos;, ip: &apos;fe80:0:0:0:a6:89ff:d202:9f92%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/f4/_mw82xh55kx...}, goog:chromeOptions: {debuggerAddress: localhost:56111}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84c79b07fe2afdb25cfedacf2b39bb21
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.Practise.testCases.TC_OpenGoogle_Sample.LaunchChrome(TC_OpenGoogle_Sample.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Practise-class-failed -->
+          <div class="suite-Practise-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.Practise.testCases.TC_NewCustomer_002</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,6 +181,40 @@
                   <a name="NewCutomer_Test">
                   </a> <!-- NewCutomer_Test -->
                   <span class="method-name">NewCutomer_Test</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill all fields}
+  (Session info: chrome=114.0.5735.106): Please fill all fields
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;01HW2308171.local&apos;, ip: &apos;fe80:0:0:0:a6:89ff:d202:9f92%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5.1&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/f4/_mw82xh55kx...}, goog:chromeOptions: {debuggerAddress: localhost:56765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b7c6e8d41089d891fb61c4b766aba527
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.Practise.testCases.BaseClass.captureScreenshot(BaseClass.java:105)
+	at com.Practise.testCases.TC_NewCustomer_002.NewCutomer_Test(TC_NewCustomer_002.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Practise-class-failed -->
+          <div class="suite-Practise-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Practise.testCases.TC_Login_001</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginPage">
+                  </a> <!-- LoginPage -->
+                  <span class="method-name">LoginPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +222,7 @@
         </div> <!-- panel Practise -->
         <div panel-name="test-xml-Practise" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/localuser/eclipse-workspace/PageObjectOPractise/TestNG.xml</span>
+            <span class="header-content">/Users/localuser/git/PageObjectModelPractise_WithConfigFile/PageObjectOPractise/TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,6 +231,8 @@
 &lt;suite name=&quot;Practise&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Testing Practise&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.Practise.testCases.TC_OpenGoogle_Sample&quot;/&gt;
+      &lt;class name=&quot;com.Practise.testCases.TC_Login_001&quot;/&gt;
       &lt;class name=&quot;com.Practise.testCases.TC_NewCustomer_002&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Testing Practise --&gt;
@@ -159,7 +247,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Testing Practise (1 class)</span>
+                <span class="test-name">Testing Practise (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +273,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'NewCutomer_Test')
-data.setCell(0, 2, 'com.Practise.testCases.TC_NewCustomer_002')
-data.setCell(0, 3, 51357);
+data.setCell(0, 1, 'LoginPage')
+data.setCell(0, 2, 'com.Practise.testCases.TC_Login_001')
+data.setCell(0, 3, 48203);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'NewCutomer_Test')
+data.setCell(1, 2, 'com.Practise.testCases.TC_NewCustomer_002')
+data.setCell(1, 3, 38980);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LaunchChrome')
+data.setCell(2, 2, 'com.Practise.testCases.TC_OpenGoogle_Sample')
+data.setCell(2, 3, 6770);
 window.suiteTableData['Practise']= { tableData: data, tableDiv: 'times-div-Practise'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Practise">
               </div> <!-- times-div-Practise -->
             </div> <!-- times-div -->
@@ -220,18 +316,52 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Practise.testCases.TC_NewCustomer_002</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Practise.testCases.TC_OpenGoogle_Sample</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">NewCutomer_Test</span>
-                <span class="method-start">12438 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LaunchChrome</span>
+                <span class="method-start">42158 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDow</span>
-                <span class="method-start">63827 ms</span>
+                <span class="method-start">48934 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Practise.testCases.TC_Login_001</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">49082 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">LoginPage</span>
+                <span class="method-start">77308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDow</span>
+                <span class="method-start">125519 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Practise.testCases.TC_NewCustomer_002</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">125664 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NewCutomer_Test</span>
+                <span class="method-start">156790 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDow</span>
+                <span class="method-start">195779 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
